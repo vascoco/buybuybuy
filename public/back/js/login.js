@@ -1,4 +1,4 @@
-;(function(){
+  $(function(){
   // console.log($('#form'));
   $('#form').bootstrapValidator({
     // 输入款验证显示的图标
@@ -18,7 +18,7 @@
           // 验证规则
           // 这里的validators 需要加s,需注意
           notEmpty: {
-            message:"请输入用户名"
+            message:"请输入用户名" 
           },
           // 非空验证
           stringLength: {
@@ -63,7 +63,7 @@
         if(info.success){
           location.href = "index.html"
         } 
-        if(info.error ==1000){
+        if(info.error ==1000){ 
           $('#form').data("bootstrapValidator").updateStatus("username","INVALID","callback")
         }
         if(info.error ==1001){
@@ -79,4 +79,4 @@
     $('#form').data("bootstrapValidator").resetForm();
     // 创建出这个实例然后调用原型上的resetForm方法
   })
-})();
+});
