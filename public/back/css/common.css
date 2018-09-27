@@ -10,6 +10,9 @@ ul,li {
   margin: 0;
   padding: 0;
 }
+.red {
+  color: #B93E3D;
+}
 
 
 
@@ -37,6 +40,10 @@ ul,li {
   top: 0;
   left: 0;
   z-index: 10;
+  transition: all 1s;
+}
+.lt-aside.hidemenu {
+  left: -180px;
 }
 .lt-aside .brand {
   width: 180px;
@@ -101,6 +108,10 @@ ul,li {
   top: 0;
   left: 0;
   background-color: #008EBC;
+  transition: all 1s;
+}
+.lt-topbar.hidemenu {
+  padding-left: 0;
 }
 .lt-topbar a {
   width: 50px;
@@ -118,7 +129,19 @@ ul,li {
   height: 800px;
   padding-top: 50px;
   padding-left: 180px;
+  transition: all 1s;
+}
+.lt-main.hidemenu {
+  padding-left: 0;
 }
 .lt-main .breadcrumb {
   margin: 20px 0;
 }
+
+
+ .echarst-1,
+ .echarst-2 {
+   width: 48%;
+   height: 400px;
+
+ }
